@@ -6,8 +6,8 @@ port = 800
 file = open("text.txt", 'w')
 
 try:
-    server.bind((ip, port))#Escuta com um ip em uma determinada porta
-    server.listen(5)#5 conexoes consecutivas
+    server.bind((ip, port))
+    server.listen(5)
     print("Listening in..." + ip + "\n" + "Port: " + str(port)  )
     (client_socket, adress) = server.accept()
     print "Received from... " + adress[0]
